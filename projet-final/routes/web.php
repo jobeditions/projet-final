@@ -12,5 +12,18 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login.login');
 });
+
+Route::get('/register', function () {
+    return view('login.register');
+});
+
+Route::get('/mailreset', function () {
+    return view('login.email');
+});
+
+Route::get('/reset', function () {
+    return view('login.password');
+});
+
